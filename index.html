@@ -5,14 +5,35 @@
     <title>Моя Первая Страница</title>
 </head>
 <body>
-    <h1>Привет! Я tatdavi01 — Младший Веб-Архитектор</h1>
+    <h1>Привет! Я tatdavi01 — Веб-Разработчик</h1>
     <p>Это мой самый первый настоящий сайт, запущенный на GitHub Pages!</p>
     <hr>
     <h3>Мои текущие навыки:</h3>
     <ul>
         <li>Создание репозиториев на GitHub (Уровень: Профи)</li>
-        <li>Базовая разметка HTML</li>
-        <li>Работа с ментором в игровом режиме</li>
+        <li>Базовая разметка HTML и создание форм</li>
+        <li>Работа со сторонними серверами (FormSubmit)</li>
     </ul>
+
+    <hr>
+    <h3>Связаться со мной:</h3>
+    <form action="https://formsubmit.co/tatdavi01@gmail.com" method="POST">
+        <div>
+            <label for="username">Ваше имя:</label><br>
+            <input type="text" id="username" name="name" required placeholder="Иван">
+        </div>
+        <br>
+        <div>
+            <label for="userphone">Номер телефона:</label><br>
+            <input type="tel" id="userphone" name="phone" required placeholder="+7...">
+        </div>
+        <br>
+        <div>
+            <label for="useremail">E-mail:</label><br>
+            <input type="email" id="useremail" name="email" required placeholder="example@mail.com">
+        </div>
+        <br>
+        <button type="submit">Отправить заявку</button>
+    </form>
 </body>
 </html>
