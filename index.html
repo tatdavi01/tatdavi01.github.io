@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Моя Первая Страница</title>
     <style>
-        /* Общие настройки для всей страницы */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f7f6;
@@ -19,8 +18,6 @@
         h1 { color: #2c3e50; }
         h3 { color: #16a085; border-bottom: 2px solid #f4f7f6; padding-bottom: 8px; }
         ul { padding-left: 20px; line-height: 1.6; }
-        
-        /* Стили для нашей формы обратной связи */
         form { margin-top: 20px; }
         label { font-weight: bold; color: #555; display: block; margin-bottom: 5px; }
         input[type="text"], input[type="email"], input[type="tel"], select {
@@ -32,8 +29,6 @@
         }
         select { height: 41px; background-color: #fff; }
         input[type="tel"] { width: 180px; }
-        
-        /* Красивая современная кнопка */
         button {
             background-color: #16a085;
             color: white;
@@ -65,7 +60,11 @@
     
     <form action="https://formsubmit.co/tatdavi01@gmail.com" method="POST">
         
+        <!-- 1. Редирект на страницу благодарности -->
         <input type="hidden" name="_next" value="https://tatdavi01.github.io/thanks.html">
+        
+        <!-- 2. Автоответчик: письмо, которое мгновенно улетит пользователю на его email -->
+        <input type="hidden" name="_autoresponse" value="Привет! 😊 Огромное спасибо за интерес к моей странице и за заполнение формы. Как я и обещала — с меня приятный сюрприз! Лови эту милую открытку для отличного настроения: https://tatdavi01.github.io/image_91e502.jpg">
         
         <div style="margin-bottom: 15px;">
             <label for="username">Ваше имя:</label>
@@ -89,5 +88,6 @@
         
         <button type="submit">Отправить заявку</button>
     </form>
-    </body>
+
+</body>
 </html>
