@@ -17,6 +17,7 @@
 
     <hr>
     <h3>Связаться со мной:</h3>
+    <!-- Наша обновленная форма обратной связи -->
     <form action="https://formsubmit.co/tatdavi01@gmail.com" method="POST">
         <div>
             <label for="username">Ваше имя:</label><br>
@@ -25,7 +26,14 @@
         <br>
         <div>
             <label for="userphone">Номер телефона:</label><br>
-            <input type="tel" id="userphone" name="phone" required placeholder="+7...">
+            <!-- Выпадающий список для кодов стран -->
+            <select name="country_code" style="padding: 3px; height: 24px;">
+                <option value="+420">🇨🇿 CZ (+420)</option>
+                <option value="+380">🇺🇦 UA (+380)</option>
+                <option value="+7">🇷🇺 RU (+7)</option>
+            </select>
+            <!-- Поле для самого номера телефона -->
+            <input type="tel" id="userphone" name="phone" required placeholder="777 123 456" style="width: 120px;">
         </div>
         <br>
         <div>
