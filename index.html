@@ -30,9 +30,8 @@
             font-size: 14px;
             box-sizing: border-box;
         }
-        /* Настройка полей телефона и выбора страны, чтобы они стояли ровно */
         select { height: 41px; background-color: #fff; }
-        input[type="tel"] { width: 180px; } /* Увеличили ширину, как ты и просил! */
+        input[type="tel"] { width: 180px; }
         
         /* Красивая современная кнопка */
         button {
@@ -63,7 +62,11 @@
     </ul>
 
     <h3>Связаться со мной:</h3>
+    
     <form action="https://formsubmit.co/tatdavi01@gmail.com" method="POST">
+        
+        <input type="hidden" name="_next" value="https://tatdavi01.github.io/thanks.html">
+        
         <div style="margin-bottom: 15px;">
             <label for="username">Ваше имя:</label>
             <input type="text" id="username" name="name" required placeholder="Иван" style="width: 100%;">
@@ -86,5 +89,5 @@
         
         <button type="submit">Отправить заявку</button>
     </form>
-</body>
+    </body>
 </html>
