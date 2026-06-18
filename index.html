@@ -3,44 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <title>Моя Первая Страница</title>
+    <style>
+        /* Общие настройки для всей страницы */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1 { color: #2c3e50; }
+        h3 { color: #16a085; border-bottom: 2px solid #f4f7f6; padding-bottom: 8px; }
+        ul { padding-left: 20px; line-height: 1.6; }
+        
+        /* Стили для нашей формы обратной связи */
+        form { margin-top: 20px; }
+        label { font-weight: bold; color: #555; display: block; margin-bottom: 5px; }
+        input[type="text"], input[type="email"], input[type="tel"], select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        /* Настройка полей телефона и выбора страны, чтобы они стояли ровно */
+        select { height: 41px; background-color: #fff; }
+        input[type="tel"] { width: 180px; } /* Увеличили ширину, как ты и просил! */
+        
+        /* Красивая современная кнопка */
+        button {
+            background-color: #16a085;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        button:hover { background-color: #117a65; }
+    </style>
 </head>
 <body>
     <h1>Привет! Я tatdavi01 — Веб-Разработчик</h1>
     <p>Это мой самый первый настоящий сайт, запущенный на GitHub Pages!</p>
-    <hr>
+    
     <h3>Мои текущие навыки:</h3>
     <ul>
         <li>Создание репозиториев на GitHub (Уровень: Профи)</li>
         <li>Базовая разметка HTML и создание форм</li>
         <li>Работа со сторонними серверами (FormSubmit)</li>
+        <li>Стилизация интерфейсов с помощью CSS</li>
     </ul>
 
-    <hr>
     <h3>Связаться со мной:</h3>
-    <!-- Наша обновленная форма обратной связи -->
     <form action="https://formsubmit.co/tatdavi01@gmail.com" method="POST">
-        <div>
-            <label for="username">Ваше имя:</label><br>
-            <input type="text" id="username" name="name" required placeholder="Иван">
+        <div style="margin-bottom: 15px;">
+            <label for="username">Ваше имя:</label>
+            <input type="text" id="username" name="name" required placeholder="Иван" style="width: 100%;">
         </div>
-        <br>
-        <div>
-            <label for="userphone">Номер телефона:</label><br>
-            <!-- Выпадающий список для кодов стран -->
-            <select name="country_code" style="padding: 3px; height: 24px;">
-                <option value="+420">🇨🇿 CZ (+420)</option>
-                <option value="+380">🇺🇦 UA (+380)</option>
-                <option value="+7">🇷🇺 RU (+7)</option>
+        
+        <div style="margin-bottom: 15px;">
+            <label for="userphone">Номер телефона:</label>
+            <select name="country_code">
+                <option value="+420">CZ (+420)</option>
+                <option value="+380">UA (+380)</option>
+                <option value="+7">RU (+7)</option>
             </select>
-            <!-- Поле для самого номера телефона -->
-            <input type="tel" id="userphone" name="phone" required placeholder="777 123 456" style="width: 120px;">
+            <input type="tel" id="userphone" name="phone" required placeholder="777 123 456">
         </div>
-        <br>
-        <div>
-            <label for="useremail">E-mail:</label><br>
-            <input type="email" id="useremail" name="email" required placeholder="example@mail.com">
+        
+        <div style="margin-bottom: 20px;">
+            <label for="useremail">E-mail:</label>
+            <input type="email" id="useremail" name="email" required placeholder="example@mail.com" style="width: 100%;">
         </div>
-        <br>
+        
         <button type="submit">Отправить заявку</button>
     </form>
 </body>
